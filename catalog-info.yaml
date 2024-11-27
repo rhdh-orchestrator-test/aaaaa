@@ -1,0 +1,18 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: aaaaa
+  description: aaaaa
+  annotations:
+    backstage.io/kubernetes-id: aaaaa
+    backstage.io/kubernetes-label-selector: 'app=spring-petclinic'
+    backstage.io/kubernetes-namespace: 'spring-petclinic-dev'
+    argocd/app-selector: rht-gitops.com/janus-argocd=aaaaa
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: rhdh-orchestrator-test/aaaaa
+spec:
+  type: api
+  system: system:default/janus-orchestrator
+  lifecycle: production
+  owner: user:default/guest
